@@ -1,0 +1,278 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>VK Tutorials</title>
+  </head>
+  <body>
+
+    
+    
+    <div class="container-fluid">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary text-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html">VK Tutorials</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav text-light" >
+              <li class="nav-item">
+                <a class="nav-link nav1 " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1" href="../aboutus.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">C Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../C++/index.html">C++ Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../Python/index.html">Python Tutorails</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Sidebar -->
+      <div class="d-none d-sm-none d-md-block">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+          <h3 class="w3-bar-item">C Language</h3>
+          <a href="index.html" class="w3-bar-item w3-button">Introduction</a>
+          <a href="firstprogram.html" class="w3-bar-item w3-button">First Program</a>
+          <a href="tokens.html" class="w3-bar-item w3-button">Tokens</a>
+          <a href="identifiers.html" class="w3-bar-item w3-button">identifiers</a>
+          <a href="Constants.html" class="w3-bar-item w3-button">Constants</a>
+          <a href="operators.html" class="w3-bar-item w3-button">Operators</a>
+          <a href="datatypes.html" class="w3-bar-item w3-button">Data Types</a>
+          <a href="variables.html" class="w3-bar-item w3-button">Variables</a>
+          <a href="ifelse.html" class="w3-bar-item w3-button">If-Else Statement</a>
+          <a href="loops.html" class="w3-bar-item w3-button" style="background-color: #8d8f99">Loops</a>
+          <a href="nestedloops.html" class="w3-bar-item w3-button">Nested Loops</a>
+          <a href="break.html" class="w3-bar-item w3-button">Break,Continue,Goto</a>
+          <a href="typecasting.html" class="w3-bar-item w3-button">Type Casting</a>
+          <a href="functions.html" class="w3-bar-item w3-button">Functions</a>
+          <a href="variablescope.html" class="w3-bar-item w3-button">Variable Scope</a>
+          <a href="recursion.html" class="w3-bar-item w3-button">Recursion</a>
+          <a href="arrays.html" class="w3-bar-item w3-button">Arrays</a>
+          <a href="pointers.html" class="w3-bar-item w3-button">Pointers</a>
+          <a href="storageclass.html" class="w3-bar-item w3-button">Storage Class</a>
+          <a href="dynamic.html" class="w3-bar-item w3-button">Dynamic Memory Allocation</a>
+          <a href="structures.html" class="w3-bar-item w3-button">Structures</a>
+          <a href="unions.html" class="w3-bar-item w3-button">Unions</a>
+          <a href="typedef.html" class="w3-bar-item w3-button">Typedef</a>
+          <a href="filehandling.html" class="w3-bar-item w3-button">File Handling</a>
+          <a href="commandlineargument.html" class="w3-bar-item w3-button">Command Line Arguments</a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">   1  </a>
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:25%">
+          <div class="w3-container w3-teal">
+            <h1>Loops</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+          <h5><strong>What is Loop?</strong></h5>
+          <P>A computer is the most suitable machine for performing repetitive tasks, and it can perform a task thousands of times. Every programming language has the feature to instruct to do such repetitive tasks with the help of certain statements. The process of repeatedly executing a collection of statements is called looping. The statements get executed many numbers of times based on the condition. But if the condition is given in such logic that the repetition continues any number of times with no fixed condition to stop looping those statements, then this type of looping is called infinite looping.</P>
+          <img src="7.jpg"><br> 
+
+          <!-- while loop            -->
+          <h4><strong>while loop</strong></h4>
+          <p>while loop is a most basic loop in C programming. while loop has one control condition, and executes as long the condition is true.  The condition of the loop is tested before the body of the loop is executed, hence it is called an entry-controlled loop.</p>
+          <code>
+            While (condition)<br>
+            {<br>
+               statement(s);<br>
+               Incrementation;<br>
+            }<br>
+          </code><br><br>
+          <img src="8.jpg"><br>
+          <code>
+            int main ()<br>
+            {<br>
+               /* local variable Initialization */   int n = 1,times=5;<br>
+<br>
+               /* while loops execution */   while( n <= times )<br>
+               {<br>
+                  printf("C while loops: %d\n", n);<br>
+                  n++;<br>
+               }<br>
+             
+               return 0;<br>
+            }<br>
+          </code><br><br>
+
+          <h4><strong>Do-While Loop</strong></h4>
+          <p>C do while loops are very similar to the while loops, but it always executes the code block at least once and furthermore as long as the condition remains true. This is an exit-controlled loop.</p>
+          <code>
+            do<br>
+            {<br>
+               statement(s);<br>
+
+            }while( condition );<br>
+          </code><br><br>
+
+          <code>
+             <br>
+          int main ()<br>
+          {<br>
+             /* local variable Initialization */   int n = 1,times=5;<br>
+
+             /* do loops execution */   do<br>
+             {<br>
+                 printf("C do while loops: %d\n", n);<br>
+                 n = n + 1;<br>
+             }while( n <= times );<br>
+           
+             return 0;<br>
+          }<br>
+          </code><br><br>
+
+          <h4><strong>For Loop</strong></h4>
+          <p>C for loops is very similar to a while loops in that it continues to process a block of code until a statement becomes false, and everything is defined in a single line. The for loop is also entry-controlled loop.</p>
+          <img src="9.jpg">
+          <code>
+ 
+          int main ()<br>
+          {<br>
+            /* local variable Initialization */  int n,times=5;;<br>
+              
+             /* for loops execution */   for( n = 1; n <= times; n = n + 1 )<br>
+             {<br>
+                printf("C for loops: %d\n", n);<br>
+             }<br>
+           
+             return 0;<br>
+          }<br>
+          </code><br><br>
+          
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+        <div class="d-sm-block d-md-none">
+          <div class="w3-container w3-teal">
+            <h1>Loops</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+             <h5><strong>What is Loop?</strong></h5>
+          <P>A computer is the most suitable machine for performing repetitive tasks, and it can perform a task thousands of times. Every programming language has the feature to instruct to do such repetitive tasks with the help of certain statements. The process of repeatedly executing a collection of statements is called looping. The statements get executed many numbers of times based on the condition. But if the condition is given in such logic that the repetition continues any number of times with no fixed condition to stop looping those statements, then this type of looping is called infinite looping.</P>
+          <img src="7.jpg"><br> 
+
+          <!-- while loop            -->
+          <h4><strong>while loop</strong></h4>
+          <p>while loop is a most basic loop in C programming. while loop has one control condition, and executes as long the condition is true.  The condition of the loop is tested before the body of the loop is executed, hence it is called an entry-controlled loop.</p>
+          <code>
+            While (condition)<br>
+            {<br>
+               statement(s);<br>
+               Incrementation;<br>
+            }<br>
+          </code><br><br>
+          <img src="8.jpg"><br>
+          <code>
+            int main ()<br>
+            {<br>
+               /* local variable Initialization */   int n = 1,times=5;<br>
+<br>
+               /* while loops execution */   while( n <= times )<br>
+               {<br>
+                  printf("C while loops: %d\n", n);<br>
+                  n++;<br>
+               }<br>
+             
+               return 0;<br>
+            }<br>
+          </code><br><br>
+
+          <h4><strong>Do-While Loop</strong></h4>
+          <p>C do while loops are very similar to the while loops, but it always executes the code block at least once and furthermore as long as the condition remains true. This is an exit-controlled loop.</p>
+          <code>
+            do<br>
+            {<br>
+               statement(s);<br>
+
+            }while( condition );<br>
+          </code><br><br>
+
+          <code>
+             <br>
+          int main ()<br>
+          {<br>
+             /* local variable Initialization */   int n = 1,times=5;<br>
+
+             /* do loops execution */   do<br>
+             {<br>
+                 printf("C do while loops: %d\n", n);<br>
+                 n = n + 1;<br>
+             }while( n <= times );<br>
+           
+             return 0;<br>
+          }<br>
+          </code><br><br>
+
+          <h4><strong>For Loop</strong></h4>
+          <p>C for loops is very similar to a while loops in that it continues to process a block of code until a statement becomes false, and everything is defined in a single line. The for loop is also entry-controlled loop.</p>
+          <img src="9.jpg">
+          <code>
+ 
+          int main ()<br>
+          {<br>
+            /* local variable Initialization */  int n,times=5;;<br>
+              
+             /* for loops execution */   for( n = 1; n <= times; n = n + 1 )<br>
+             {<br>
+                printf("C for loops: %d\n", n);<br>
+             }<br>
+           
+             return 0;<br>
+          }<br>
+          </code><br><br>
+          
+
+            <br><br>
+          </div>
+
+          <div class="row">
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="ifelse.html" class="w3-bar-item w3-button">Previous</a></button></div>
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="nestedloops.html" class="w3-bar-item w3-button">Next</a></button></div>
+            </div>
+
+        </div>
+
+
+
+
+      <!-- <img class="bg-img" src="bg.jpg" alt="..."> -->
+      <!-- <footer class="fixed-bottom">
+      <p>Copyright<i class="bi bi-at"></i>2021 || Belongs to Dept of CSE students</p>
+      </footer> -->
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

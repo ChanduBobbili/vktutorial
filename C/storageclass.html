@@ -1,0 +1,252 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>VK Tutorials</title>
+  </head>
+  <body>
+
+    
+    
+    <div class="container-fluid">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary text-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html">VK Tutorials</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav text-light" >
+              <li class="nav-item">
+                <a class="nav-link nav1 " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1" href="../aboutus.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">C Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../C++/index.html">C++ Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../Python/index.html">Python Tutorails</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Sidebar -->
+      <div class="d-none d-sm-none d-md-block">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+          <h3 class="w3-bar-item">C Language</h3>
+          <a href="index.html" class="w3-bar-item w3-button">Introduction</a>
+          <a href="firstprogram.html" class="w3-bar-item w3-button">First Program</a>
+          <a href="tokens.html" class="w3-bar-item w3-button">Tokens</a>
+          <a href="identifiers.html" class="w3-bar-item w3-button">identifiers</a>
+          <a href="Constants.html" class="w3-bar-item w3-button">Constants</a>
+          <a href="operators.html" class="w3-bar-item w3-button">Operators</a>
+          <a href="datatypes.html" class="w3-bar-item w3-button">Data Types</a>
+          <a href="variables.html" class="w3-bar-item w3-button">Variables</a>
+          <a href="ifelse.html" class="w3-bar-item w3-button">If-Else Statement</a>
+          <a href="loops.html" class="w3-bar-item w3-button">Loops</a>
+          <a href="nestedloops.html" class="w3-bar-item w3-button">Nested Loops</a>
+          <a href="break.html" class="w3-bar-item w3-button">Break,Continue,Goto</a>
+          <a href="typecasting.html" class="w3-bar-item w3-button">Type Casting</a>
+          <a href="functions.html" class="w3-bar-item w3-button">Functions</a>
+          <a href="variablescope.html" class="w3-bar-item w3-button">Variable Scope</a>
+          <a href="recursion.html" class="w3-bar-item w3-button">Recursion</a>
+          <a href="arrays.html" class="w3-bar-item w3-button">Arrays</a>
+          <a href="pointers.html" class="w3-bar-item w3-button">Pointers</a>
+          <a href="storageclass.html" class="w3-bar-item w3-button" style="background-color: #8d8f99">Storage Class</a>
+          <a href="dynamic.html" class="w3-bar-item w3-button">Dynamic Memory Allocation</a>
+          <a href="structures.html" class="w3-bar-item w3-button">Structures</a>
+          <a href="unions.html" class="w3-bar-item w3-button">Unions</a>
+          <a href="typedef.html" class="w3-bar-item w3-button">Typedef</a>
+          <a href="filehandling.html" class="w3-bar-item w3-button">File Handling</a>
+          <a href="commandlineargument.html" class="w3-bar-item w3-button">Command Line Arguments</a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">   1  </a>
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:25%">
+          <div class="w3-container w3-teal">
+            <h1>Storage Class</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>Almost all computer languages can handle system memory. All the variables used in your program occupies a precise memory space along with the program itself, which needs some memory for storing itself (i.e., its own program). Therefore, managing memory utmost care is one of the major tasks a programmer must keep in mind while writing codes.</p>
+            <p>When a variable gets assigned in a memory in one program, that memory location cannot be used by another variable or another program. So, C language gives us a technique of allocating memory to different variables and programs.
+<br><br>
+There are two types used for allocating memory. These are:</p>
+          <h5><strong>Static Memory Allocations</strong></h5>
+          <p>In the static memory allocation technique, allocation of memory is done at compilation time, and it stays the same throughout the entire run of your program. Neither any changes will be there in the amount of memory nor any change in the location of memory.</p>
+
+          <h5><strong>Dynamic Memory Allocations</strong></h5>
+          <p>In dynamic memory allocation technique, allocation of memory is done at the time of running the program, and it also has the facility to increase/decrease the memory quantity allocated and can also release or free the memory as and when not required or used. Reallocation of memory can also be done when required. So, it is more advantageous, and memory can be managed efficiently.</p>
+
+          <h4><strong>Storage Class</strong></h4>
+          <p>Storage Classes are associated with variables for describing the features of any variable or function in the C program. These storage classes deal with features such as scope, lifetime and visibility which helps programmers to define a particular variable during the program's runtime. These storage classes are preceded by the data type which they had to modify.</p>
+          <p><strong>There are four types of Storage Classes:</strong>
+            <ol>
+              <li>auto</li>
+              <li>register</li>
+              <li>static</li>
+              <li>extern</li>
+            </ol>
+          </p>
+            
+          <h6><strong>auto storage class</strong></h6>
+          <p>auto comes by default with all local variables as its storage class. The keyword auto is used to define this storage class explicitly</p>
+          <code>
+            int roll; // contains auto by default<br>
+            auto int roll;    // in addition, we can use auto keyword<br>
+          </code><br>
+          <p>The above example has a variable name <strong>roll</strong> with auto as a storage class. This storage class can only be implemented with the local variables.</p>
+
+          <h6><strong>register storage class</strong></h6>
+          <p>This storage class is implemented for classifying local variables whose value needs to be saved in a register in place of RAM (Random Access Memory). This is implemented when you want your variable the maximum size equivalent to the size of the register. It uses the keyword register.</p>
+          <code>register int  counter;</code><br>
+          <p>Register variables are used when implementing looping in counter variables to make program execution fast. Register variables work faster than variables stored in RAM (primary memory).</p>
+          <code>
+            for(register int counter=0; counter<=9; counter++)<br>
+            {<br>
+            // loop body<br>
+            }<br>
+          </code><br>
+
+
+          <h6><strong>static storage class</strong></h6>
+          <p>This storage class uses static variables that are used popularly for writing programs in C language. Static variables preserve the value of a variable even when the scope limit exceeds. Static storage class has its scope local to the function in which it is defined.
+
+
+On the other hand, global static variables can be accessed in any part of your program. The default value assigned is '0' by the C compiler. The keyword used to define this storage class is <strong>static</strong>.</p>
+          <code>static int var = 6;</code><br>
+
+          <h6><strong>extern storage class</strong></h6>
+          <p>The extern storage class is used to feature a variable to be used from within different blocks of the same program. Mainly, a value is set to that variable which is in a different block or function and can be overwritten or altered from within another block as well. Hence it can be said that an extern variable is a global variable which is assigned with a value that can be accessed and used within the entire program. Moreover, a global variable can be explicitly made an extern variable by implementing the keyword 'extern' preceded the variable name.</p>
+          <code>
+            int val;<br>
+            extern void funcExtern();<br>
+             
+            main() <br>
+            {<br>
+               val = 10;<br>
+               funcExtern();<br>
+            }<br>
+          </code><br>
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+        <div class="d-sm-block d-md-none">
+          <div class="w3-container w3-teal">
+            <h1>Storage Class</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>Almost all computer languages can handle system memory. All the variables used in your program occupies a precise memory space along with the program itself, which needs some memory for storing itself (i.e., its own program). Therefore, managing memory utmost care is one of the major tasks a programmer must keep in mind while writing codes.</p>
+            <p>When a variable gets assigned in a memory in one program, that memory location cannot be used by another variable or another program. So, C language gives us a technique of allocating memory to different variables and programs.
+<br><br>
+There are two types used for allocating memory. These are:</p>
+          <h5><strong>Static Memory Allocations</strong></h5>
+          <p>In the static memory allocation technique, allocation of memory is done at compilation time, and it stays the same throughout the entire run of your program. Neither any changes will be there in the amount of memory nor any change in the location of memory.</p>
+
+          <h5><strong>Dynamic Memory Allocations</strong></h5>
+          <p>In dynamic memory allocation technique, allocation of memory is done at the time of running the program, and it also has the facility to increase/decrease the memory quantity allocated and can also release or free the memory as and when not required or used. Reallocation of memory can also be done when required. So, it is more advantageous, and memory can be managed efficiently.</p>
+
+          <h4><strong>Storage Class</strong></h4>
+          <p>Storage Classes are associated with variables for describing the features of any variable or function in the C program. These storage classes deal with features such as scope, lifetime and visibility which helps programmers to define a particular variable during the program's runtime. These storage classes are preceded by the data type which they had to modify.</p>
+          <p><strong>There are four types of Storage Classes:</strong>
+            <ol>
+              <li>auto</li>
+              <li>register</li>
+              <li>static</li>
+              <li>extern</li>
+            </ol>
+          </p>
+            
+          <h6><strong>auto storage class</strong></h6>
+          <p>auto comes by default with all local variables as its storage class. The keyword auto is used to define this storage class explicitly</p>
+          <code>
+            int roll; // contains auto by default<br>
+            auto int roll;    // in addition, we can use auto keyword<br>
+          </code><br>
+          <p>The above example has a variable name <strong>roll</strong> with auto as a storage class. This storage class can only be implemented with the local variables.</p>
+
+          <h6><strong>register storage class</strong></h6>
+          <p>This storage class is implemented for classifying local variables whose value needs to be saved in a register in place of RAM (Random Access Memory). This is implemented when you want your variable the maximum size equivalent to the size of the register. It uses the keyword register.</p>
+          <code>register int  counter;</code><br>
+          <p>Register variables are used when implementing looping in counter variables to make program execution fast. Register variables work faster than variables stored in RAM (primary memory).</p>
+          <code>
+            for(register int counter=0; counter<=9; counter++)<br>
+            {<br>
+            // loop body<br>
+            }<br>
+          </code><br>
+
+
+          <h6><strong>static storage class</strong></h6>
+          <p>This storage class uses static variables that are used popularly for writing programs in C language. Static variables preserve the value of a variable even when the scope limit exceeds. Static storage class has its scope local to the function in which it is defined.
+
+
+On the other hand, global static variables can be accessed in any part of your program. The default value assigned is '0' by the C compiler. The keyword used to define this storage class is <strong>static</strong>.</p>
+          <code>static int var = 6;</code><br>
+
+          <h6><strong>extern storage class</strong></h6>
+          <p>The extern storage class is used to feature a variable to be used from within different blocks of the same program. Mainly, a value is set to that variable which is in a different block or function and can be overwritten or altered from within another block as well. Hence it can be said that an extern variable is a global variable which is assigned with a value that can be accessed and used within the entire program. Moreover, a global variable can be explicitly made an extern variable by implementing the keyword 'extern' preceded the variable name.</p>
+          <code>
+            int val;<br>
+            extern void funcExtern();<br>
+             
+            main() <br>
+            {<br>
+               val = 10;<br>
+               funcExtern();<br>
+            }<br>
+          </code><br>
+
+
+
+            <br><br>
+          </div>
+
+          <div class="row">
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="pointers.html" class="w3-bar-item w3-button">Previous</a></button></div>
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="dynamic.html" class="w3-bar-item w3-button">Next</a></button></div>
+            </div>
+
+        </div>
+
+
+
+
+      <!-- <img class="bg-img" src="bg.jpg" alt="..."> -->
+      <!-- <footer class="fixed-bottom">
+      <p>Copyright<i class="bi bi-at"></i>2021 || Belongs to Dept of CSE students</p>
+      </footer> -->
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

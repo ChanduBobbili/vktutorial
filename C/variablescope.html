@@ -1,0 +1,282 @@
+
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>VK Tutorials</title>
+  </head>
+  <body>
+
+    
+    
+    <div class="container-fluid">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary text-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html">VK Tutorials</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav text-light" >
+              <li class="nav-item">
+                <a class="nav-link nav1 " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1" href="../aboutus.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">C Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../C++/index.html">C++ Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../Python/index.html">Python Tutorails</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Sidebar -->
+      <div class="d-none d-sm-none d-md-block">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+          <h3 class="w3-bar-item">C Language</h3>
+          <a href="index.html" class="w3-bar-item w3-button">Introduction</a>
+          <a href="firstprogram.html" class="w3-bar-item w3-button">First Program</a>
+          <a href="tokens.html" class="w3-bar-item w3-button">Tokens</a>
+          <a href="identifiers.html" class="w3-bar-item w3-button">identifiers</a>
+          <a href="Constants.html" class="w3-bar-item w3-button">Constants</a>
+          <a href="operators.html" class="w3-bar-item w3-button">Operators</a>
+          <a href="datatypes.html" class="w3-bar-item w3-button">Data Types</a>
+          <a href="variables.html" class="w3-bar-item w3-button">Variables</a>
+          <a href="ifelse.html" class="w3-bar-item w3-button">If-Else Statement</a>
+          <a href="loops.html" class="w3-bar-item w3-button">Loops</a>
+          <a href="nestedloops.html" class="w3-bar-item w3-button">Nested Loops</a>
+          <a href="break.html" class="w3-bar-item w3-button">Break,Continue,Goto</a>
+          <a href="typecasting.html" class="w3-bar-item w3-button">Type Casting</a>
+          <a href="functions.html" class="w3-bar-item w3-button">Functions</a>
+          <a href="variablescope.html" class="w3-bar-item w3-button" style="background-color: #8d8f99">Variable Scope</a>
+          <a href="recursion.html" class="w3-bar-item w3-button">Recursion</a>
+          <a href="arrays.html" class="w3-bar-item w3-button">Arrays</a>
+          <a href="pointers.html" class="w3-bar-item w3-button">Pointers</a>
+          <a href="storageclass.html" class="w3-bar-item w3-button">Storage Class</a>
+          <a href="dynamic.html" class="w3-bar-item w3-button">Dynamic Memory Allocation</a>
+          <a href="structures.html" class="w3-bar-item w3-button">Structures</a>
+          <a href="unions.html" class="w3-bar-item w3-button">Unions</a>
+          <a href="typedef.html" class="w3-bar-item w3-button">Typedef</a>
+          <a href="filehandling.html" class="w3-bar-item w3-button">File Handling</a>
+          <a href="commandlineargument.html" class="w3-bar-item w3-button">Command Line Arguments</a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">   1  </a>
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:25%">
+          <div class="w3-container w3-teal">
+            <h1>Variable Scope</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>A scope is a region of the program, and the scope of variables refers to the area of the program where the variables can be accessed after its declaration.</p>
+            <p>In C programming, variable declared within a function is different from a variable declared outside of a function. The variable can be declared in three places. These are:</p>
+            <table class="table table-bordered border-dark">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Inside a function or a block.</td>
+                  <td>local variables</td>
+                </tr>
+                <tr>
+                  <td>Out of all functions.</td>
+                  <td> Global variables</td>
+                </tr>
+                <tr>
+                  <td>In the function parameters. </td>
+                  <td>Formal parameters</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h3><strong>Local Variable</strong></h3>
+            <p>Variables that are declared within the function block and can be used only within the function is called local variables.</p>
+
+            <h4><strong>Local Scope</strong></h4>
+            <p>A local scope or block is collective program statements put in and declared within a function or block (a specific region enclosed with curly braces) and variables lying inside such blocks are termed as local variables. All these locally scoped statements are written and enclosed within left ({) and right braces (}) curly braces. There's a provision for nested blocks also in C which means there can be a block or a function within another block or function. So it can be said that variable(s) that are declared within a block can be accessed within that specific block and all other inner blocks of that block, but those variables cannot be accessed outside the block.</p>
+            <code>
+              int main ()<br>
+                {<br>
+                //local variable definition and initialization<br>
+                int x,y,z;<br>
+                 
+                //actual initialization<br>
+                x = 20;<br>
+                y = 30;<br>
+                z = x + y;<br>
+                 
+                printf ("value of x = %d, y = %d and z = %d\n", x, y, z);<br>
+                 
+                return 0;<br>
+            }<br>
+            </code><br><br>
+
+            <h3><strong>Global Scope</strong></h3>
+            <p>Variables that are declared outside of a function block and can be accessed inside the function is called global variables.</p>
+
+            <h4><strong>Global Scope</strong></h4>
+            <p>Global variables are defined outside a function or any specific block, in most of the case, on the top of the C program. These variables hold their values all through the end of the program and are accessible within any of the functions defined in your program.
+
+Any function can access variables defined within the global scope, i.e., its availability stays for the entire program after being declared.</p>
+          
+          <code>
+            //global variable definition<br>
+            int z;<br>
+
+            int main ()<br>
+            {<br>
+                //local variable definition and initialization<br>
+                int x,y;<br>
+                 
+                //actual initialization<br>
+                x = 20;<br>
+                y = 30;<br>
+                z = x + y;<br>
+                 
+                printf ("value of x = %d, y = %d and z = %d\n", x, y, z);<br>
+                 
+                return 0;<br>
+            }<br>
+          </code><br>
+          
+
+         
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+        <div class="d-sm-block d-md-none">
+          <div class="w3-container w3-teal">
+            <h1>Variable Scope</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>A scope is a region of the program, and the scope of variables refers to the area of the program where the variables can be accessed after its declaration.</p>
+            <p>In C programming, variable declared within a function is different from a variable declared outside of a function. The variable can be declared in three places. These are:</p>
+            <table class="table table-bordered border-dark">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Inside a function or a block.</td>
+                  <td>local variables</td>
+                </tr>
+                <tr>
+                  <td>Out of all functions.</td>
+                  <td> Global variables</td>
+                </tr>
+                <tr>
+                  <td>In the function parameters. </td>
+                  <td>Formal parameters</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h3><strong>Local Variable</strong></h3>
+            <p>Variables that are declared within the function block and can be used only within the function is called local variables.</p>
+
+            <h4><strong>Local Scope</strong></h4>
+            <p>A local scope or block is collective program statements put in and declared within a function or block (a specific region enclosed with curly braces) and variables lying inside such blocks are termed as local variables. All these locally scoped statements are written and enclosed within left ({) and right braces (}) curly braces. There's a provision for nested blocks also in C which means there can be a block or a function within another block or function. So it can be said that variable(s) that are declared within a block can be accessed within that specific block and all other inner blocks of that block, but those variables cannot be accessed outside the block.</p>
+            <code>
+              int main ()<br>
+                {<br>
+                //local variable definition and initialization<br>
+                int x,y,z;<br>
+                 
+                //actual initialization<br>
+                x = 20;<br>
+                y = 30;<br>
+                z = x + y;<br>
+                 
+                printf ("value of x = %d, y = %d and z = %d\n", x, y, z);<br>
+                 
+                return 0;<br>
+            }<br>
+            </code><br><br>
+
+            <h3><strong>Global Scope</strong></h3>
+            <p>Variables that are declared outside of a function block and can be accessed inside the function is called global variables.</p>
+
+            <h4><strong>Global Scope</strong></h4>
+            <p>Global variables are defined outside a function or any specific block, in most of the case, on the top of the C program. These variables hold their values all through the end of the program and are accessible within any of the functions defined in your program.
+
+Any function can access variables defined within the global scope, i.e., its availability stays for the entire program after being declared.</p>
+          
+          <code>
+            //global variable definition<br>
+            int z;<br>
+
+            int main ()<br>
+            {<br>
+                //local variable definition and initialization<br>
+                int x,y;<br>
+                 
+                //actual initialization<br>
+                x = 20;<br>
+                y = 30;<br>
+                z = x + y;<br>
+                 
+                printf ("value of x = %d, y = %d and z = %d\n", x, y, z);<br>
+                 
+                return 0;<br>
+            }<br>
+          </code><br>
+          
+
+            <br><br>
+          </div>
+
+          <div class="row">
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="functions.html" class="w3-bar-item w3-button">Previous</a></button></div>
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="recursion.html" class="w3-bar-item w3-button">Next</a></button></div>
+          </div>
+
+        </div>
+
+
+
+
+      <!-- <img class="bg-img" src="bg.jpg" alt="..."> -->
+      <!-- <footer class="fixed-bottom">
+      <p>Copyright<i class="bi bi-at"></i>2021 || Belongs to Dept of CSE students</p>
+      </footer> -->
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>

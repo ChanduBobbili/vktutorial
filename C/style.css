@@ -1,0 +1,25 @@
+
+
+.navbar-nav{
+	margin-left: 73%;
+}
+.nav1:hover{
+	color: #fafafa;
+	background-color: #0320fc;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+footer{
+	background-color: #b6b8c2;
+}
+footer > p{
+	padding: 0px;
+	margin-top: 10px;
+	text-align: center;
+	font-size: 75%;
+}

@@ -1,0 +1,461 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bo",
+				"border-dark"
+			],
+			[
+				"ta",
+				"table-bordered"
+			],
+			[
+				"typ",
+				"typedef"
+			],
+			[
+				"st",
+				"storageclass"
+			],
+			[
+				"var",
+				"variablescope"
+			],
+			[
+				"type",
+				"typecasting"
+			],
+			[
+				"t",
+				"tbody\tTag"
+			],
+			[
+				"th",
+				"th\tTag"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"o",
+				"ol\tTag"
+			],
+			[
+				"max",
+				"max-height\tproperty"
+			],
+			[
+				"d--",
+				"d-md-block"
+			],
+			[
+				"margi",
+				"margin-top\tproperty"
+			],
+			[
+				"col",
+				"col-md-4"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"font",
+				"font-family\tproperty"
+			],
+			[
+				"margin",
+				"margin\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"bac",
+				"background-image\tproperty"
+			],
+			[
+				"pa",
+				"padding\tproperty"
+			],
+			[
+				"b",
+				"bg-primary"
+			],
+			[
+				"border",
+				"border-radius\tproperty"
+			],
+			[
+				"te",
+				"text-align\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5902,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "aboutus.html",
+			"settings":
+			{
+				"buffer_size": 3355,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "explore.html",
+			"settings":
+			{
+				"buffer_size": 5514,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 1175,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/F/Chandu/page/C/index.html",
+		"/F/Chandu/page/C/commandlineargument.html",
+		"/F/Chandu/page/C/filehandling.html",
+		"/F/Chandu/page/C/typedef.html",
+		"/F/Chandu/page/C/unions.html",
+		"/F/Chandu/page/C/structures.html",
+		"/F/Chandu/page/C/dynamic.html",
+		"/F/Chandu/page/C/storageclass.html",
+		"/F/Chandu/page/C/pointers.html",
+		"/F/Chandu/page/C/arrays.html",
+		"/F/Chandu/page/C/recursion.html",
+		"/F/Chandu/page/C/variablescope.html",
+		"/F/Chandu/page/C/functions.html",
+		"/F/Chandu/page/C/typecasting.html",
+		"/F/Chandu/page/C/break.html",
+		"/F/Chandu/page/C/nestedloops.html",
+		"/F/Chandu/page/C/loops.html",
+		"/F/Chandu/page/C/ifelse.html",
+		"/F/Chandu/page/C/variables.html",
+		"/F/Chandu/page/C/datatypes.html",
+		"/F/Chandu/page/C/tokens.html",
+		"/F/Chandu/page/C/operators.html",
+		"/F/Chandu/page/C/constants.html",
+		"/F/Chandu/page/C/identifiers.html",
+		"/F/Chandu/page/C/firstprogram.html",
+		"/F/Chandu/page/C/style.css",
+		"/F/Chandu/page/index.html",
+		"/F/Chandu/page/style.css",
+		"/F/Chandu/page/aboutus.html",
+		"/F/Chandu/page/C++/index.html",
+		"/F/Chandu/page/Python/index.html",
+		"/F/Chandu/page/explore.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"3em"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5902,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1365,
+								1365
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 249.333333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "aboutus.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3355,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1491,
+								1491
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 349.333333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "explore.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1898,
+								1898
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 482.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1175,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								994,
+								994
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 777.333333333,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"s",
+				"F:\\Chandu\\page\\C\\constants.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

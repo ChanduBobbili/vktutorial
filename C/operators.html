@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <title>VK Tutorials</title>
+  </head>
+  <body>
+
+    
+    
+    <div class="container-fluid">
+
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary text-light">
+        <div class="container-fluid">
+          <a class="navbar-brand mb-0 h1" href="../index.html">VK Tutorials</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon nav2"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav text-light" >
+              <li class="nav-item">
+                <a class="nav-link nav1 " aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav1" href="../aboutus.html">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle nav1" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">C Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../C++/index.html">C++ Tutorails</a></li>
+                  <li><a class="dropdown-item" href="../Python/index.html">Python Tutorails</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+        <!-- Sidebar -->
+      <div class="d-none d-sm-none d-md-block">
+        <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+          <h3 class="w3-bar-item">C Language</h3>
+          <a href="index.html" class="w3-bar-item w3-button">Introduction</a>
+          <a href="firstprogram.html" class="w3-bar-item w3-button">First Program</a>
+          <a href="tokens.html" class="w3-bar-item w3-button">Tokens</a>
+          <a href="identifiers.html" class="w3-bar-item w3-button">identifiers</a>
+          <a href="Constants.html" class="w3-bar-item w3-button">Constants</a>
+          <a href="operators.html" class="w3-bar-item w3-button" style="background-color: #8d8f99">Operators</a>
+          <a href="datatypes.html" class="w3-bar-item w3-button">Data Types</a>
+          <a href="variables.html" class="w3-bar-item w3-button">Variables</a>
+          <a href="ifelse.html" class="w3-bar-item w3-button">If-Else Statement</a>
+          <a href="loops.html" class="w3-bar-item w3-button">Loops</a>
+          <a href="nestedloops.html" class="w3-bar-item w3-button">Nested Loops</a>
+          <a href="break.html" class="w3-bar-item w3-button">Break,Continue,Goto</a>
+          <a href="typecasting.html" class="w3-bar-item w3-button">Type Casting</a>
+          <a href="functions.html" class="w3-bar-item w3-button">Functions</a>
+          <a href="variablescope.html" class="w3-bar-item w3-button">Variable Scope</a>
+          <a href="recursion.html" class="w3-bar-item w3-button">Recursion</a>
+          <a href="arrays.html" class="w3-bar-item w3-button">Arrays</a>
+          <a href="pointers.html" class="w3-bar-item w3-button">Pointers</a>
+          <a href="storageclass.html" class="w3-bar-item w3-button">Storage Class</a>
+          <a href="dynamic.html" class="w3-bar-item w3-button">Dynamic Memory Allocation</a>
+          <a href="structures.html" class="w3-bar-item w3-button">Structures</a>
+          <a href="unions.html" class="w3-bar-item w3-button">Unions</a>
+          <a href="typedef.html" class="w3-bar-item w3-button">Typedef</a>
+          <a href="filehandling.html" class="w3-bar-item w3-button">File Handling</a>
+          <a href="commandlineargument.html" class="w3-bar-item w3-button">Command Line Arguments</a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">     </a>
+          <a href="#" class="w3-bar-item w3-button">   1  </a>
+        </div>
+
+        <!-- Page Content -->
+        <div style="margin-left:25%">
+          <div class="w3-container w3-teal">
+            <h1>Operators</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>C operators are symbols that are used to perform mathematical or logical manipulations. The C programming language is rich with built-in operators. Operators take part in a program for manipulating data and variables and form a part of the mathematical or logical expressions.</p>
+            <h4><strong>Types of Operators:</strong></h4>
+            <ol>
+              <li>Arithmetic Operators</li>
+              <li>Relational Operators</li>
+              <li>Logical Operators</li>
+              <li>Assignment Operators</li>
+              <li>Increment and Decrement Operators</li>
+              <li>Conditional Operator</li>
+              <li>Bitwise Operators</li>
+              <li>Special Operators</li>
+            </ol><br><br>
+
+            <h4><strong>Arithmetic Operators</strong></h4>
+            <p>Arithmetic Operators are used to performing mathematical calculations like addition (+), subtraction (-), multiplication (*), division (/) and modulus (%).</p><br><br>
+
+            <h4><strong>Increment and Decrement Operators</strong></h4>
+            <p>Increment and Decrement Operators are useful operators generally used to minimize the calculation, i.e. ++x and x++ means x=x+1 or -x and x−−means x=x-1. But there is a slight difference between ++ or −− written before or after the operand. Applying the pre-increment first add one to the operand and then the result is assigned to the variable on the left whereas post-increment first assigns the value to the variable on the left and then increment the operand</p><br>
+            <code>
+               <br><br>
+
+              void main()<br>
+              {<br>
+                  //set a and b both equal to 5.<br>
+                  int a=5, b=5;<br><br>
+                  
+                  //Print them and decrementing each time.<br>
+                  //Use postfix mode for a and prefix mode for b.<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+              }<br>
+            </code><br>
+            <h6><strong>Program Output:</strong></h6>
+            <p><strong>5 4<br>
+                        4 3<br>
+                        3 2<br>
+                        2 1<br>
+                        1 0<br>
+            </strong></p><br><br>
+
+            <h4><strong>Relational Operators</strong></h4>
+            <p>Relational operators are used to comparing two quantities or values.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>==</td>
+                  <td>Is equal to</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Is not equal to</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Greater than</td>
+                </tr>
+                <tr>
+                  <td><</td>
+                  <td>Less than</td>
+                </tr>
+                <tr>
+                  <td>>=</td>
+                  <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                  <td><=</td>
+                  <td>Less than or equal to</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+ 
+              <h4><strong>Logical Operators</strong></h4>
+            <p>C provides three logical operators when we test more than one condition to make decisions. These are: && (meaning logical AND), || (meaning logical OR) and ! (meaning logical NOT).</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&&</td>
+                  <td><strong>And</strong> operator. It performs logical conjunction of two expressions. (if both expressions evaluate to True, result is True. If either expression evaluates to False, the result is False)</td>
+                </tr>
+                <tr>
+                  <td>||</td>
+                  <td><strong>Or</strong> operator. It performs a logical disjunction on two expressions. (if either or both expressions evaluate to True, the result is True)</td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td><strong>Not</strong> operator. It performs logical negation on an expression.</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Bitwise Operators</strong></h4>
+            <p>C provides a special operator for bit operation between two variables.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><<</td>
+                  <td>Binary Left Shift Operator</td>
+                </tr>
+                <tr>
+                  <td>>></td>
+                  <td>Binary Right Shift Operator</td>
+                </tr>
+                <tr>
+                  <td>~</td>
+                  <td>Binary Ones Complement Operator</td>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>Binary AND Operator</td>
+                </tr>
+                <tr>
+                  <td>^</td>
+                  <td>Binary XOR Operator</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>Binary OR Operator</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Assignment Operators</strong></h4>
+            <p>Assignment operators applied to assign the result of an expression to a variable. C has a collection of shorthand assignment operators.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>=</td>
+                  <td>Assign</td>
+                </tr>
+                <tr>
+                  <td>+=</td>
+                  <td>Increments then assign</td>
+                </tr>
+                <tr>
+                  <td>-=</td>
+                  <td>Decrements then assign</td>
+                </tr>
+                <tr>
+                  <td>*=</td>
+                  <td>Multiplies then assign</td>
+                </tr>
+                <tr>
+                  <td>/=</td>
+                  <td>Divides then assign</td>
+                </tr>
+                <tr>
+                  <td>%=</td>
+                  <td>Modulus then assign</td>
+                </tr>
+                <tr>
+                  <td><<=</td>
+                  <td>Left shift and assign</td>
+                </tr>
+                <tr>
+                  <td>>>=</td>
+                  <td>Right shift and assign</td>
+                </tr>
+                <tr>
+                  <td>&=</td>
+                  <td>Bitwise AND assign</td>
+                </tr>
+                <tr>
+                  <td>^=</td>
+                  <td>Bitwise exclusive OR and assign</td>
+                </tr>
+                <tr>
+                  <td>|=</td>
+                  <td>Bitwise inclusive OR and assign</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Conditional Operators</strong></h4>
+            <p>C offers a ternary operator which is the conditional operator (?: in combination) to construct conditional expressions.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>?:</td>
+                  <td>Conditional Expression</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Special Operators</strong></h4>
+            <p>C supports some special operators</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sizeof()</td>
+                  <td>Returns the size of a memory location</td>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>Returns the address of a memory location.</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>Pointer to a variable.</td>
+                </tr>
+
+              </tbody>
+            </table><br><br>
+
+              <h4><strong>Program to demonstrate sizeof() operator</strong></h4>
+              <code>
+                void main()<br>
+                {<br>
+                    int i=10; // Variables Defining and Assign values<br>
+                    printf("integer: %d\n", sizeof(i));<br>
+                }<br>
+              </code><br>
+              <img src="3.jpg"><br><br>
+            
+
+            <br><br>
+          </div>
+        </div>
+      </div>
+
+        <div class="d-sm-block d-md-none">
+          <div class="w3-container w3-teal">
+            <h1>Operators</h1>
+          </div>
+          <div class="w3-container" style="margin-top: 2rem;">
+            <p>C operators are symbols that are used to perform mathematical or logical manipulations. The C programming language is rich with built-in operators. Operators take part in a program for manipulating data and variables and form a part of the mathematical or logical expressions.</p>
+            <h4><strong>Types of Operators:</strong></h4>
+            <ol>
+              <li>Arithmetic Operators</li>
+              <li>Relational Operators</li>
+              <li>Logical Operators</li>
+              <li>Assignment Operators</li>
+              <li>Increment and Decrement Operators</li>
+              <li>Conditional Operator</li>
+              <li>Bitwise Operators</li>
+              <li>Special Operators</li>
+            </ol><br><br>
+
+            <h4><strong>Arithmetic Operators</strong></h4>
+            <p>Arithmetic Operators are used to performing mathematical calculations like addition (+), subtraction (-), multiplication (*), division (/) and modulus (%).</p><br><br>
+
+            <h4><strong>Increment and Decrement Operators</strong></h4>
+            <p>Increment and Decrement Operators are useful operators generally used to minimize the calculation, i.e. ++x and x++ means x=x+1 or -x and x−−means x=x-1. But there is a slight difference between ++ or −− written before or after the operand. Applying the pre-increment first add one to the operand and then the result is assigned to the variable on the left whereas post-increment first assigns the value to the variable on the left and then increment the operand</p><br>
+            <code>
+               <br><br>
+
+              void main()<br>
+              {<br>
+                  //set a and b both equal to 5.<br>
+                  int a=5, b=5;<br><br>
+                  
+                  //Print them and decrementing each time.<br>
+                  //Use postfix mode for a and prefix mode for b.<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+                  printf("\n%d %d",a--,--b);<br>
+              }<br>
+            </code><br>
+            <h6><strong>Program Output:</strong></h6>
+            <p><strong>5 4<br>
+                        4 3<br>
+                        3 2<br>
+                        2 1<br>
+                        1 0<br>
+            </strong></p><br><br>
+
+            <h4><strong>Relational Operators</strong></h4>
+            <p>Relational operators are used to comparing two quantities or values.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>==</td>
+                  <td>Is equal to</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Is not equal to</td>
+                </tr>
+                <tr>
+                  <td>></td>
+                  <td>Greater than</td>
+                </tr>
+                <tr>
+                  <td><</td>
+                  <td>Less than</td>
+                </tr>
+                <tr>
+                  <td>>=</td>
+                  <td>Greater than or equal to</td>
+                </tr>
+                <tr>
+                  <td><=</td>
+                  <td>Less than or equal to</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+ 
+              <h4><strong>Logical Operators</strong></h4>
+            <p>C provides three logical operators when we test more than one condition to make decisions. These are: && (meaning logical AND), || (meaning logical OR) and ! (meaning logical NOT).</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>&&</td>
+                  <td><strong>And</strong> operator. It performs logical conjunction of two expressions. (if both expressions evaluate to True, result is True. If either expression evaluates to False, the result is False)</td>
+                </tr>
+                <tr>
+                  <td>||</td>
+                  <td><strong>Or</strong> operator. It performs a logical disjunction on two expressions. (if either or both expressions evaluate to True, the result is True)</td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td><strong>Not</strong> operator. It performs logical negation on an expression.</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Bitwise Operators</strong></h4>
+            <p>C provides a special operator for bit operation between two variables.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><<</td>
+                  <td>Binary Left Shift Operator</td>
+                </tr>
+                <tr>
+                  <td>>></td>
+                  <td>Binary Right Shift Operator</td>
+                </tr>
+                <tr>
+                  <td>~</td>
+                  <td>Binary Ones Complement Operator</td>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>Binary AND Operator</td>
+                </tr>
+                <tr>
+                  <td>^</td>
+                  <td>Binary XOR Operator</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>Binary OR Operator</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Assignment Operators</strong></h4>
+            <p>Assignment operators applied to assign the result of an expression to a variable. C has a collection of shorthand assignment operators.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>=</td>
+                  <td>Assign</td>
+                </tr>
+                <tr>
+                  <td>+=</td>
+                  <td>Increments then assign</td>
+                </tr>
+                <tr>
+                  <td>-=</td>
+                  <td>Decrements then assign</td>
+                </tr>
+                <tr>
+                  <td>*=</td>
+                  <td>Multiplies then assign</td>
+                </tr>
+                <tr>
+                  <td>/=</td>
+                  <td>Divides then assign</td>
+                </tr>
+                <tr>
+                  <td>%=</td>
+                  <td>Modulus then assign</td>
+                </tr>
+                <tr>
+                  <td><<=</td>
+                  <td>Left shift and assign</td>
+                </tr>
+                <tr>
+                  <td>>>=</td>
+                  <td>Right shift and assign</td>
+                </tr>
+                <tr>
+                  <td>&=</td>
+                  <td>Bitwise AND assign</td>
+                </tr>
+                <tr>
+                  <td>^=</td>
+                  <td>Bitwise exclusive OR and assign</td>
+                </tr>
+                <tr>
+                  <td>|=</td>
+                  <td>Bitwise inclusive OR and assign</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Conditional Operators</strong></h4>
+            <p>C offers a ternary operator which is the conditional operator (?: in combination) to construct conditional expressions.</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>?:</td>
+                  <td>Conditional Expression</td>
+                </tr>
+              </tbody>
+            </table><br><br>
+
+            <h4><strong>Special Operators</strong></h4>
+            <p>C supports some special operators</p>
+            <table class="table table-bordered border-primary">
+              <thead>
+                <tr>
+                  <th scope="col" class="table-dark">Operator</th>
+                  <th scope="col" class="table-dark">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>sizeof()</td>
+                  <td>Returns the size of a memory location</td>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>Returns the address of a memory location.</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>Pointer to a variable.</td>
+                </tr>
+
+              </tbody>
+            </table><br><br>
+
+              <h4><strong>Program to demonstrate sizeof() operator</strong></h4>
+              <code>
+                void main()<br>
+                {<br>
+                    int i=10; // Variables Defining and Assign values<br>
+                    printf("integer: %d\n", sizeof(i));<br>
+                }<br>
+              </code><br>
+              <img src="3.jpg"><br><br>
+
+            <br><br>
+          </div>
+
+          <div class="row">
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="constants.html" class="w3-bar-item w3-button">Previous</a></button></div>
+              <div class="col-6 col-sm-2"><button class="btn btn-primary"><a href="datatypes.html" class="w3-bar-item w3-button">Next</a></button></div>
+            </div>
+
+        </div>
+
+
+
+
+      <!-- <img class="bg-img" src="bg.jpg" alt="..."> -->
+      <!-- <footer class="fixed-bottom">
+      <p>Copyright<i class="bi bi-at"></i>2021 || Belongs to Dept of CSE students</p>
+      </footer> -->
+    </div>
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
