@@ -1,0 +1,35 @@
+name: Keep Repository Active
+
+on:
+  schedule:
+    # Runs at 00:00 on the 1st of every month
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+# This grants the built-in bot permission to push code for this workflow
+permissions:
+  contents: write
+
+jobs:
+  auto-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # This is required to allow the bot to push code
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update keepalive file
+        run: |
+          echo "Last run: $(date)" > keepalive.txt
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add keepalive.txt
+          # The '|| exit 0' prevents the action from failing if there are no changes to commit
+          git commit -m "chore: auto-commit to prevent workflow suspension" || exit 0
+          git push
+          
