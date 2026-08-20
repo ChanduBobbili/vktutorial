@@ -1,0 +1,22 @@
+name: Scheduled Docker Pull
+
+on:
+  schedule:
+    # Cron format: Minute Hour Day-of-Month Month Day-of-Week
+    # '*/30 * * * *' = Every 30 minutes
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  pull-image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull and Remove Docker Image
+        run: |
+          IMAGE_NAME="chandubobbili/vite-plus:0.1.20"
+          
+          echo "Pulling image..."
+          docker pull $IMAGE_NAME
+          
+          echo "Removing image locally..."
+          docker rmi $IMAGE_NAME
