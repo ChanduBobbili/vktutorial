@@ -13,12 +13,12 @@ const packagesToDownload = [
 ];
 
 function runDownloads() {
-  logToFile("================================");
-  logToFile("NPM Download Bot Started");
-  logToFile("================================");
+  console.log("================================");
+  console.log("NPM Download Bot Started");
+  console.log("================================");
 
   for (const item of packagesToDownload) {
-    logToFile(`Starting ${item.name} : ${item.count} downloads`);
+    console.log(`Starting ${item.name} : ${item.count} downloads`);
 
     // Using shell: true ensures the global 'nid' command is found
     const result = spawnSync('nid', [
@@ -29,15 +29,15 @@ function runDownloads() {
     ], { encoding: 'utf-8', shell: true });
 
     if (result.status === 0) {
-      logToFile(`Completed ${item.name}`);
+      console.log(`Completed ${item.name}`);
     } else {
-      logToFile(`Failed ${item.name}. Error: ${result.stderr || 'Unknown'}`);
+      console.log(`Failed ${item.name}. Error: ${result.stderr || 'Unknown'}`);
     }
   }
 
-  logToFile("\n================================");
-  logToFile("NPM Download Bot Finished");
-  logToFile("================================\n");
+  console.log("\n================================");
+  console.log("NPM Download Bot Finished");
+  console.log("================================\n");
 }
 
 // Execute if run directly
