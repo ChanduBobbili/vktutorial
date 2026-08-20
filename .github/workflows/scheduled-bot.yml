@@ -1,0 +1,26 @@
+name: Weekly NPM Increaser Bot
+
+on:
+  schedule:
+    # Cron format: Minute Hour Day-of-Month Month Day-of-Week
+    # '0 2 * * 1' = Every Monday at 02:00 UTC
+    - cron: '0 2 * * 1'
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  run-downloads:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install global CLI tool
+        run: npm install -g npm-increaser-downloads
+
+      - name: Run Bot Script
+        run: node bot.js
